@@ -1,0 +1,118 @@
+body {
+    background-color: #345995;
+}
+
+li {
+    list-style: none;
+    color: #FFF;
+    font-family: 'Poppins', 'Rubik', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.84px;
+    
+}
+a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.84px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    transition: all .2s ease-in-out ;
+
+}
+
+.mobileMenu {
+    display: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color:#FFC501;
+    transition: all .2s ease-in-out ;
+}
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width:1200px ;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navList {
+    display: flex;
+    gap: 300px;;
+}
+
+.mobileMenu div {
+    width: 32px;
+    height: 4px;
+    background-color: #ffffff;
+    margin: 8px;
+    border-radius: 1px 1px 1px ;
+}
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        position: relative;
+        width: 100%;
+        height: 60px;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .navList {
+        position: fixed;
+        top: 8vh;
+        left: 0;
+        width: 100vw;
+        height: 92vh;
+        background-color: #345995;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        display: flex;
+        gap: 30px;
+        transform: translateX(-100%);
+       
+    }
+
+    .navList li {
+        margin-left: 0;
+        text-align: center; 
+        
+    }
+
+    .mobileMenu {
+        display: block;
+    }
+
+    .navList.show {
+        transform: translateX(0);
+    }
+
+    a {
+        font-family: 'Poppins', 'Rubik', sans-serif;
+    }
+}
+
+
+
+    
+
